@@ -3,650 +3,862 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
     <title>Full Menu</title>
 </head>
 <body>
-    <!--This page is to let the customer see the full list of the beverages, pastries and sides the cafe is offering-->
-    <h1>
-        Full Menu
-    </h1>
-
-    <h2 id="beverages">Beverages</h2>
-
-     <img src="Cappuccino.jpg" alt="A picture of a cappuccino " width="150">
-        <p>
-            <b>
-             Cappuccino - R30.00
-            </b>
-        </p>
-        <form>
-           <input type="radio" id="hot" name="drink" value="hot">
-           <label for="hot">Hot</label><br>
-
-           <input type="radio" id="iced" name="drink" value="iced">
-           <label for="iced">Iced</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
-
-
-        </form>
-
-     <br>
-
-     <img src="Hot_Matcha.jpg" alt="A picture of hot matcha" width="150">
-        <p>
-            <b>
-              Matcha - R45.00
-            </b>
-        </p>
-        <form>
-          <input type="radio" id="hot" name="drink" value="hot">
-          <label for="hot">Hot</label><br>
-
-          <input type="radio" id="iced" name="drink" value="iced">
-          <label for="iced">Iced</label>
-          <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
-
-
-        </form>
-
-     
-        <br>
- 
-      <img src="Hot_Coffee.jpg" alt="A picture of coffee" width="150">
-        <p>
-            <b>
-               Latte - R32.00
-            </b>
-        </p>
-       <form>
-           <input type="radio" id="hot" name="drink" value="hot">
-           <label for="hot">Hot</label><br>
-
-           <input type="radio" id="iced" name="drink" value="iced">
-           <label for="iced">Iced</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
-
-
-        </form>
-
-     <br>
-
-        <img src="Iced_Americano.jpg" alt="A picture of iced Americano" width="150">
-        <p>
-            <b>
-                Americano - R25.00
-            </b>
-        </p>
-        <form>
-           <input type="radio" id="hot" name="drink" value="hot">
-           <label for="hot">Hot</label>
-
-          <br>
-
-           <input type="radio" id="iced" name="drink" value="iced">
-           <label for="iced">Iced</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
-
-
-        </form>
-
-      <br>
-
-        <img src="Chai_Latte.jpg" alt="Chai latte" width="150">
-        <p>
-            <b>
-                Chai Latte - R34.00
-            </b>
-        </p>
-       <form>
-          <input type="radio" id="hot" name="drink" value="hot">
-          <label for="hot">Hot</label>
-
-         <br>
-
-          <input type="radio" id="iced" name="drink" value="iced">
-          <label for="iced">Iced</label>
-          <br>
-          <label>Qty:</label>
-           <input type = "number">
-           <br>
-
-
-        </form>
-
-      <br>
-
-        <img src="Frappaccino.jpg" alt="A picture of a Frappaccino " width="150">
-        <p>
-            <b>
-                Frappaccino - R50.00
-            </b>
-        </p>
-       <form>
-          <input type="radio" id="hot" name="drink" value="hot">
-          <label for="hot">Hot</label><br>
-
-          <input type="radio" id="iced" name="drink" value="iced">
-          <label for="iced">Iced</label>
-          <br>
-          <label>Qty:</label>
-          <input type = "number">
-          <br>
-          
-        </form>
-
-     <br>
-
-       <img src="Hot_Chocolate.jpg" alt="A picture of hot chocolate" width="150">
-       <p>
-            <b>
-             Hot Chocolate - R32.00
-            </b>
-        </p>
-        <br>
-        <label>Qty:</label>
-        <input type = "number">
-       
-     <br><br><br>
-
-       <img src="Tea.jpg" alt="A picture of tea" width="150">
-        <p>
-            <b>
-               Tea - R25.00
-            </b>
-        </p>
-       <form>
-           <input type="radio" id="hot" name="drink" value="hot">
-           <label for="hot">Hot</label><br>
-
-           <input type="radio" id="iced" name="drink" value="iced">
-           <label for="iced">Iced</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
-
-
-        </form>
-
-     <br>
-
-       <h3>Juices</h3>
-        <img src="Lemonade.jpg" alt="A picture of a lemonade" width="150">
-        <p>
-            <b>
-                Lemonade - R30.00
-            </b>
-        </p>
-        <label>Qty:</label>
-        <input type = "number">
-         <br>  
-     <br>
-
-        <img src="Orange_Juice.jpg" alt="A picture of orange Juice" width="150">
-        <p>
-            <b>
-                Orange Juice - R35.00
-            </b>
-        </p>
-
-        <label>Qty:</label>
-        <input type = "number">
-        <br><br>
-
-
+    <header>
+       <!--This page is to let the customer see the full list of the beverages, pastries and sides the cafe is offering-->
+       <!--It has everything in the menu oage except it shows more items-->
+        <h1 class="Full-menu">
+           Full Menu
+        </h1>
+    </header>
     
-        <img src="Mango_Juice.jpg" alt="A picture of mange Juice" width="150">
-        <p>
-            <b>
-                Mango Juice -R32.00
-            </b>
-        </p>
-        
-        <label>Qty:</label>
-        <input type = "number">
-        <br><br>
+    <h2 class="Beverages">Beverages</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Cappuccino">
+                <img src="Cappuccino.jpg" alt="A picture of a cappuccino " width="150">
+                <p>
+                    <b>
+                      Cappuccino - R30.00
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="hot" name="drink" value="hot">
+                  <label for="hot">Hot</label><br>
 
+                  <input type="radio" id="iced" name="drink" value="iced">
+                  <label for="iced">Iced</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
+                </form>
 
+            </div>
 
-        <img src="Watermelon_Juice.jpg" alt="A picture of Watermelon Juice" width="150">
-        <p>
-            <b>
-                Watermelon Juice - R30.00
-            </b>
-        </p>
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Matcha">
+                <img src="Hot_Matcha.jpg" alt="A picture of hot matcha" width="150">
+                <p>
+                    <b>
+                      Matcha - R45.00
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="hot" name="drink" value="hot">
+                  <label for="hot">Hot</label><br>
 
-        <label>Qty:</label>
-        <input type = "number">
-        
+                  <input type="radio" id="iced" name="drink" value="iced">
+                  <label for="iced">Iced</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
+                </form>
+            </div>
 
-    <br>
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Latte">
+                <img src="Hot_Coffee.jpg" alt="A picture of coffee" width="150">
+                <p>
+                    <b>
+                       Latte - R32.00
+                    </b>
+                </p>
+                <form>
+                   <input type="radio" id="hot" name="drink" value="hot">
+                   <label for="hot">Hot</label><br>
 
-    <h2 id="pastries">Pastries</h2> 
-        <img src="Croissant.jpg" alt="A picture of a croissant" width="150">
-        <p>
-            <b>
-                Croissant - R18.00
-            </b>
-        </p>
-        <form>
-          <input type="radio" id="Plain" name="Pastry" value="Plain">
-          <label for="Plain">Plain</label>
-          <br>
+                   <input type="radio" id="iced" name="drink" value="iced">
+                   <label for="iced">Iced</label>
+                   <br>
+                   <label>Qty:</label>
+                   <input type = "number">
+                   <br>
+                </form>
 
-          <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
-          <label for="Chocolate">Chocolate</label>
-          <br>
-
-          <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
-          <label for="Strawberry">Strawberry</label>
-          <br>
-           
-          <label>Qty:</label>
-          <input type = "number">
-          <br>
-          
-        </form>
-
-        <br>
-
-
-        <img src="Brownie.jpg" alt="A picture of a brownie" width="150">
-        <p>
-            <b>
-                Brownie - R30.00
+            </div>
             
-            </b>
-        </p>
-        <br>
-        
-        <label>Qty:</label>
-        <input type = "number">
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Americano">
+                <img src="Iced_Americano.jpg" alt="A picture of iced Americano" width="150">
+                <p>
+                    <b>
+                       Americano - R25.00
+                    </b>
+                </p>
+                <form>
+                   <input type="radio" id="hot" name="drink" value="hot">
+                  <label for="hot">Hot</label>
 
-        <br><br>
-        
+                  <br>
 
-        <img src="Cinnamon_Roll.jpg" alt="A picture of cinnamon rolls" width="150">
-        <p>
-            <b>
-                Cinnamon Rolls - R25.00
-            </b>
-        </p>
-        <label>Qty:</label>
-        <input type = "number">
+                  <input type="radio" id="iced" name="drink" value="iced">
+                  <label for="iced">Iced</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
+                </form>
+            </div>
+  
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Chai">
+                <img src="Chai_Latte.jpg" alt="Chai latte" width="150">
+                <p>
+                    <b>
+                       Chai Latte - R34.00
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="hot" name="drink" value="hot">
+                  <label for="hot">Hot</label>
+                  <br>
 
-        <br><br><br>
-        
-        <img src="Chocolate_Muffin.jpg" alt="A picture of a Chocolate Muffin" width="150">
-        <p>
-            <b>
-                Muffin - R26.00
-            </b>
-        </p>
-        <form>
-          <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
-          <label for="Vanilla">Vanilla</label>
-          <br>
+                  <input type="radio" id="iced" name="drink" value="iced">
+                  <label for="iced">Iced</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                 <br>
+                </form>
+            </div>
+            
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Frappaccino">
+                <img src="Frappaccino.jpg" alt="A picture of a Frappaccino " width="150">
+                <p>
+                    <b>
+                      Frappaccino - R50.00
+                    </b>
+                </p>
 
-          <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
-          <label for="Chocolate">Chocolate</label>
-          <br>
+                <form>
+                  <input type="radio" id="hot" name="drink" value="hot">
+                  <label for="hot">Hot</label><br>
 
-          <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
-          <label for="Cappuccino">Cappuccino</label>
-          <br>
+                  <input type="radio" id="iced" name="drink" value="iced">
+                  <label for="iced">Iced</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
+          
+                </form>
 
-          <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
-          <label for="Blueberry">Blueberry</label>
-          <br>
-
-          <input type="radio" id="Lemon" name="Pastry" value="Lemon">
-          <label for="Lemon">Lemon</label>
-          <br>
+            </div>
+            
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Hot Chocolate">
+                <img src="Hot_Chocolate.jpg" alt="A picture of hot chocolate" width="150">
+                <p>
+                    <b>
+                      Hot Chocolate - R32.00
+                    </b>
+                </p>
+                <br>
+                <label>Qty:</label>
+                <input type = "number">
        
-          <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
-          <label for="Oatmeal">Oatmeal</label>
-          <br>
+            </div>
 
-          <label>Qty:</label>
-          <input type = "number">
-          <br>
 
-        </form>
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Tea">
+                <img src="Tea.jpg" alt="A picture of tea" width="150">
+                <p>
+                    <b>
+                      Tea - R25.00
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="hot" name="drink" value="hot">
+                  <label for="hot">Hot</label><br>
 
-        <br><br>
+                  <input type="radio" id="iced" name="drink" value="iced">
+                  <label for="iced">Iced</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
+                </form>
 
-        <img src="Filled_Dougnuts.jpg" alt="A picture of filled doughnuts" width="150">
-        <p>
-            <b>
-                Filled Doughnuts -R30.00
-            </b>
-        </p>
-        <form>
-           <input type="radio" id="Custard" name="Pastry" value="Custard">
-           <label for="Custard">Custard filing</label><br>
+            </div>
+        </div>
 
-           <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
-           <label for="Chocolate">Chocolate Filling</label><br>
+      <h3 class="Juices">Juices</h3>
+        <div class="menu-grid">
+           <div class="menu-item">
+            <input type="checkbox" name="order[]" value="Lemonade">
+                <img src="Lemonade.jpg" alt="A picture of a lemonade" width="150">
+                <p>
+                    <b>
+                      Lemonade - R30.00
+                    </b>
+                </p>
+                <label>Qty:</label>
+                <input type = "number">
+                <br>  
+            </div>
 
-           <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
-           <label for="Strawberry">Strawberry Filling</label><br>
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Orange Juice">
+               <img src="Orange_Juice.jpg" alt="A picture of orange Juice" width="150">
+                <p>
+                    <b>
+                       Orange Juice - R35.00
+                    </b>
+                </p>
 
-           <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
-           <label for="Blueberry">Blueberry Filling</label><br>
+                <label>Qty:</label>
+                <input type = "number">
+            </div>
+      
 
-           <input type="radio" id="Lemon" name="Pastry" value="Lemon">
-           <label for="Lemon">Lemon Filling</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="mango juice">
+                <img src="Mango_Juice.jpg" alt="A picture of mange Juice" width="150">
+                <p>
+                    <b>
+                       Mango Juice -R32.00
+                    </b>
+                </p>
+        
+                <label>Qty:</label>
+                <input type = "number">
+            </div>
+
+
+            <div class="menu-item">
+              <input type="checkbox" name="order[]" value="Watermelon Juice">
+                <img src="Watermelon_Juice.jpg" alt="A picture of Watermelon Juice" width="150">
+                <p>
+                    <b>
+                       Watermelon Juice - R30.00
+                    </b>
+                </p>
+
+                <label>Qty:</label>
+                <input type = "number">
+        
+            </div>
+        </div>
+
+
+    <h2 class="Pastries">Pastries</h2> 
+
+        <div class="menu-grid2">
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Croissant">
+                <img src="Croissant.jpg" alt="A picture of a croissant" width="150">
+                <p>
+                    <b>
+                      Croissant - R18.00
+                    </b>
+                </p>
+
+                <form>
+                  <input type="radio" id="Plain" name="Pastry" value="Plain">
+                  <label for="Plain">Plain</label>
+                  <br>
+
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label>
+                  <br>
+
+                  <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
+                  <label for="Strawberry">Strawberry</label>
+                  <br>
+
+                  <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
+                  <label for="Strawberry">Strawberry</label>
+                  <br>
+
+                  <input type="radio" id="Almond" name="Pastry" value="Almond">
+                  <label for="Almond">Almond</label>
+                  <br>
+
+               
+                  <input type="radio" id="Cheese" name="Pastry" value="Cheese">
+                  <label for="Cheese">Cheesy</label>
+                  <br>
+
+                  <input type="radio" id="Nutella" name="Pastry" value="Nutella">
+                  <label for="Nutella">Nutella</label>
+                  <br> 
+
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
+          
+                </form>
+            </div>
+        
+
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Brownie">
+               <img src="Brownie.jpg" alt="A picture of a brownie" width="150">
+               <p>
+                    <b>
+                       Brownie - R30.00
+            
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label>
+                  <br>
+
+                  <input type="radio" id="Caramel" name="Pastry" value="Caramel">
+                  <label for="Caramel">Caramel</label>
+                  <br>
+     
+                  <input type="radio" id="Oreo" name="Pastry" value="Oreo">
+                  <label for="Oreo">Oreo</label>
+                  <br>
+
+                  <input type="radio" id="Peanut" name="Pastry" value="Peanut">
+                  <label for="Peanut">Peanut Butter</label>
+                  <br>
+
+                  <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
+                  <label for="Strawberry">Strawberry</label>
+                  <br>
+
+                  <input type="radio" id="Smore" name="Pastry" value="Smore">
+                  <label for="Smore">S'mores</label>
+                  <br>
+                
+        
+                  <label>Qty:</label>
+                  <input type = "number">
+                </form>
+            </div>
+        
+
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Cinnamon roll">
+                <img src="Cinnamon_Roll.jpg" alt="A picture of cinnamon rolls" width="150">
+                <p>
+                    <b>
+                      Cinnamon Rolls - R25.00
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="Cinnamon" name="Pastry" value="Cinnamon">
+                  <label for="Cinnamon">Original</label><br>
+
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label>
+                  <br>
+
+
+                  <input type="radio" id="Nutella" name="Pastry" value="Nutella">
+                  <label for="Nutella">Nutella</label><br>
+
+                  <input type="radio" id="Smore" name="Pastry" value="Smore">
+                  <label for="Smore">S'mores</label>
+                  <br>
+
+                  <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
+                  <label for="Blueberry">Blueberry</label><br>
+
+                  <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                  <label for="Lemon">Lemon</label>
+                  <br>
+                
+                   <label>Qty:</label>
+                   <input type = "number">
+                </form>
+            </div>
+
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Muffin">
+               <img src="Chocolate_Muffin.jpg" alt="A picture of a Chocolate Muffin" width="150">
+               <p>
+                    <b>
+                      Muffin - R26.00
+                    </b>
+                </p>
+
+                <form>
+                  <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
+                  <label for="Vanilla">Vanilla</label>
+                  <br>
+
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label>
+                  <br>
+
+                  <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
+                  <label for="Cappuccino">Cappuccino</label>
+                  <br>
+
+                  <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
+                  <label for="Blueberry">Blueberry</label>
+                  <br>
+
+                  <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                  <label for="Lemon">Lemon</label>
+                  <br>
+       
+                  <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
+                  <label for="Oatmeal">Oatmeal</label>
+                  <br>
+
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
+
+                </form>
+            </div>
+
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Filled Doughnuts">
+                <img src="Filled_Dougnuts.jpg" alt="A picture of filled doughnuts" width="150">
+                <p>
+                    <b>
+                       Filled Doughnuts -R30.00
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="Custard" name="Pastry" value="Custard">
+                  <label for="Custard">Custard filing</label><br>
+
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate Filling</label><br>
+
+                  <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
+                  <label for="Strawberry">Strawberry Filling</label><br>
+
+                  <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
+                  <label for="Blueberry">Blueberry Filling</label><br>
+
+                  <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                  <label for="Lemon">Lemon Filling</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
            
-        </form>
+                </form>
 
-        <br><br>
+            </div>
 
-        <img src="Chocolate_Cookie.jpg" alt="A picture of cookies" width="150">
-        <p>
-            <b>
-              Cookies - R25.00
-            </b>
-        </p>
-        <form>
-           <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
-           <label for="Vanilla">Vanilla</label><br>
 
-           <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
-           <label for="Chocolate">Chocolate</label><br>
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Cookies">
+                <img src="Chocolate_Cookie.jpg" alt="A picture of cookies" width="150">
+                <p>
+                    <b>
+                       Cookies - R25.00
+                    </b>
+                </p>
+                <form>
+                  <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
+                  <label for="Vanilla">Vanilla</label><br>
 
-           <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
-           <label for="Cappuccino">Cappuccino</label><br>
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label><br>
 
-           <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
-           <label for="Blueberry">Blueberry</label><br>
+                  <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
+                  <label for="Cappuccino">Cappuccino</label><br>
 
-           <input type="radio" id="Lemon" name="Pastry" value="Lemon">
-           <label for="Lemon">Lemon</label>
-           <br>
+                  <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
+                  <label for="Blueberry">Blueberry</label><br>
+
+                  <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                  <label for="Lemon">Lemon</label>
+                  <br>
        
-           <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
-           <label for="Oatmeal">Oatmeal</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
+                  <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
+                  <label for="Oatmeal">Oatmeal</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
 
-        </form>
+                </form>
 
-        <br><br>
+            </div>
 
-        <img src="Doughnuts.jpg" alt="A picture of Doughnuts" width="150">
-        <p>
-            <b>
-                Doughnut - R25.00
-            </b>
-        </p>
-        <form>
-           <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
-           <label for="Vanilla">Vanilla</label><br>
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Doughnuts">
+                <img src="Doughnuts.jpg" alt="A picture of Doughnuts" width="150">
+                <p>
+                    <b>
+                       Doughnut - R25.00
+                    </b>
+                </p>
+                <form>
+                   <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
+                   <label for="Vanilla">Vanilla</label><br>
 
-           <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
-           <label for="Chocolate">Chocolate</label><br>
+                   <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                   <label for="Chocolate">Chocolate</label><br>
 
-           <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
-           <label for="Cappuccino">Cappuccino</label><br>
+                   <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
+                   <label for="Cappuccino">Cappuccino</label><br>
 
-           <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
-           <label for="Blueberry">Blueberry</label><br>
+                   <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
+                   <label for="Blueberry">Blueberry</label><br>
 
-           <input type="radio" id="Lemon" name="Pastry" value="Lemon">
-           <label for="Lemon">Lemon</label>
-           <br>
+                   <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                   <label for="Lemon">Lemon</label>
+                   <br>
        
-           <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
-           <label for="Oatmeal">Oatmeal</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
+                   <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
+                   <label for="Oatmeal">Oatmeal</label>
+                   <br>
+                   <label>Qty:</label>
+                   <input type = "number">
+                   <br>
 
-        </form>
+                </form>
 
-        <br><br>
+            </div>
 
-        <img src="Cake.jpg" alt="A picture of a Chocolate cake" width="150">
-        <p>
-            <b>
-                Cake - R36.00
-            </b>
-        </p>
-        <form>
-           <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
-           <label for="Vanilla">Vanilla</label><br>
 
-           <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
-           <label for="Chocolate">Chocolate</label><br>
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Cake">
+                <img src="Cake.jpg" alt="A picture of a Chocolate cake" width="150">
+                <p>
+                    <b>
+                        Cake - R36.00
+                    </b>
+                </p>
 
-           <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
-           <label for="Cappuccino">Cappuccino</label><br>
+                <form>
+                  <input type="radio" id="Vanilla" name="Pastry" value="Vanilla">
+                  <label for="Vanilla">Vanilla</label><br>
 
-           <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
-           <label for="Blueberry">Blueberry</label><br>
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label><br>
 
-           <input type="radio" id="Lemon" name="Pastry" value="Lemon">
-           <label for="Lemon">Lemon</label>
-           <br>
+                  <input type="radio" id="Cappuccino" name="Pastry" value="Cappuccino">
+                  <label for="Cappuccino">Cappuccino</label><br>
+
+                  <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
+                  <label for="Blueberry">Blueberry</label><br>
+
+                  <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                  <label for="Lemon">Lemon</label>
+                  <br>
        
-           <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
-           <label for="Oatmeal">Oatmeal</label>
-           <br>
-           <label>Qty:</label>
-           <input type = "number">
-           <br>
+                  <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
+                  <label for="Oatmeal">Oatmeal</label>
+                  <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                  <br>
 
-        </form>
-
-        <br><br>
-
-        <img src="Banana_Bread.jpg" alt="A picture of Banana Bread" width="150">
-        <p>
-            <b>
-                Banana Bread - R20.00
-            </b>
-        </p>
-        <label>Qty:</label>
-        <input type = "number">
-
-        <br><br>
-        <img src="Tiramisu.jpg" alt="A picture of Tiramisu" width="150">
-        <p>
-            <b>
-                Tiramisu - R55.00
-            </b>
-        </p>
-        <label>Qty:</label>
-        <input type = "number">
+                </form>
+            </div>
 
 
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Banana Bread">
+                <img src="Banana_Bread.jpg" alt="A picture of Banana Bread" width="150">
+                <p>
+                    <b>
+                        Banana Bread - R20.00
+                    </b>
+                </p>  
+                <form>
+                   <input type="radio" id="Banana" name="Pastry" value="Banana">
+                   <label for="Banana">Original</label><br>
 
-        <img src="Strawberry_Cake.jpg" alt="A picture of a  Strawberry cake" width="150">
-        <p>
-            <b>
-                Strawberry Cake - R36.00
-            </b>
-        </p>
-        <br>
-        <label>Qty:</label>
-        <input type = "number">
+                   <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                   <label for="Chocolate">Chocolate</label>
+                   <br>
 
-        <br><br>
+                   <input type="radio" id="Nutella" name="Pastry" value="Nutella">
+                   <label for="Nutella">Nutella</label><br>
+
+                   <input type="radio" id="Almond" name="Pastry" value="Almond">
+                   <label for="Almond">Almond</label>
+                   <br>
+
+                   <input type="radio" id="Blueberry" name="Pastry" value="Blueberry">
+                   <label for="Blueberry">Blueberry</label><br>
+
+                   <input type="radio" id="Espresso" name="Pastry" value="Espresso">
+                   <label for="Lemon">Espresso</label>
+                   <br>
+
+                   <label>Qty:</label>
+                   <input type = "number">
+                </form>
+            </div>
+
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Tiramisu">
+                <img src="Tiramisu.jpg" alt="A picture of Tiramisu" width="150">
+                <p>
+                    <b>
+                        Tiramisu - R55.00
+                    </b>
+                </p>  
+                <form>
+                  <input type="radio" id="Cinnamon" name="Pastry" value="Cinnamon">
+                  <label for="Cinnamon">Original</label>
+                  <br>
+
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label>
+                  <br>
 
 
-        <img src="Cheesecake.jpg" alt="A picture of a Cheesecake" width="150">
-        <p>
-            <b>
-              Cheesecake - R38.00
-            </b>
-        </p><form>
-        <input type="radio" id="Original" name="Pastry" value="Original">
-        <label for="Original">Orgininal</label><br>
+                  <input type="radio" id="Nutella" name="Pastry" value="Nutella">
+                  <label for="Nutella">Nutella</label>
+                  <br>
 
-        <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
-        <label for="Chocolate">Chocolate</label><br>
+                   <input type="radio" id="Smore" name="Pastry" value="Smore">
+                  <label for="Smore">Pistachio</label>
+                  <br>
 
-        <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
-        <label for="Strawberry">Strawberry</label><br>
+                  <input type="radio" id="Cheesecake" name="Pastry" value="Cheesecake">
+                  <label for="Cheesecake">Cheesecake</label>
+                  <br>
 
-        <input type="radio" id="Lemon" name="Pastry" value="Lemon">
-        <label for="Lemon">Lemon</label>
-        <br>
-        <label>Qty:</label>
-        <input type = "number">
-        <br>
+                  <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                  <label for="Lemon">Limoncello</label>
+                  <br>
 
-    </form>
+                  <label>Qty:</label>
+                  <input type = "number">
+                </form>
+            </div>
 
-    <br><br>
 
-    <h2 id="Sweetners">Sweetners</h2>
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Strawberry Cake">
+                <img src="Strawberry_Cake.jpg" alt="A picture of a  Strawberry cake" width="150">
+                <p>
+                    <b>
+                        Strawberry Cake - R36.00
+                    </b>
+                </p>
+               <br>
+               <label>Qty:</label>
+               <input type = "number">
 
+            </div>
+
+            <div class="menu-item2">
+              <input type="checkbox" name="order[]" value="Cheesecake">
+                <img src="Cheesecake.jpg" alt="A picture of a Cheesecake" width="150">
+                <p>
+                    <b>
+                      Cheesecake - R38.00
+                    </b>
+                </p>
+
+                <form>
+                  <input type="radio" id="Original" name="Pastry" value="Original">
+                  <label for="Original">Orgininal</label><br>
+
+                  <input type="radio" id="Chocolate" name="Pastry" value="Chocolate">
+                  <label for="Chocolate">Chocolate</label><br>
+
+                  <input type="radio" id="Strawberry" name="Pastry" value="Strawberry">
+                  <label for="Strawberry">Strawberry</label><br>
+
+                  <input type="radio" id="Lemon" name="Pastry" value="Lemon">
+                  <label for="Lemon">Lemon</label>
+                   <br>
+                  <label>Qty:</label>
+                  <input type = "number">
+                   <br>
+
+                </form>
+
+            </div>
+        </div>
+
+
+
+    <h2 class="Sweetners">Sweetners</h2>
+    <div class="circle-grid">
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="Vanilla">
         <img src="Vanilla_Syrup.jpg" alt="Vanilla syrup" width="150">
         <p>
-            <b>
-              Vanilla
-            </b>
+          <b>
+            Vanilla
+          </b>
         </p>
+      </div>
 
-       <br>
+      <br>
 
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="Caramel">
         <img src="Caramel_syrup.jpg" alt="Caramel Syrup" width="150">
         <p>
-            <b>
-              Caramel
-            </b>
+          <b>
+           Caramel
+          </b>
         </p>
+      </div>
 
-        <br>
-
+      <br>
+      
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="Irish Cream">
         <img src="irish-cream.jpg" alt="Irish cream" width="150">
         <p>
-            <b>
-              Irish Cream
-            </b>
+          <b>
+            Irish Cream
+          </b>
         </p>
+      </div>
 
-        <br>
-
+      <br>
+   
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="Hazelnut">
         <img src="HazelnutSyrup.jpg" alt="Hazelnut Syrup" width="150">
         <p>
-           <b>
-              Hazelnut Syrup
-            </b>
+          <b>
+           Hazelnut Syrup
+          </b>
+          
         </p>
+      </div>
 
-        <br>
-
+      <br>
+  
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="Maple">
         <img src="Maple_syrup.webp" alt="A picture of maple syrup" width="150">
         <p>
-            <b>
-              Maple Syrup
-            </b>
+            
+          <b>
+            Maple Syrup
+          </b>
         </p> 
+      </div>
 
-        <br>
-    
+      <br>
+      
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="Brown">
         <img src="BrownSugar.webp" alt="Brown Sugar" width="150">
         <p>
-            <b>
-              Brown Sugar
-            </b>
+          <b>
+            Brown Sugar
+          </b>
         </p>
+      </div>
 
-        <br>
+      <br>
 
+      <div class="circle">
+        <input type="checkbox" name="order[]" value=" White">
         <img src="White sugar.webp" alt="White Sugar" width="150">
         <p>
-            <b>
-              White Sugar
-            </b>
+          <b>
+            White Sugar
+          </b>
         </p>
+      </div>
 
-        <br>
+      <br>
 
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="PumpkinSpice">
         <img src="PumpkinSpice.jpg" alt="Pumpkin Spice" width="150">
         <p>
-            <b>
-              Pumpkin Spice
-            </b>
+          <b>
+            Pumpkin Spice
+          </b>
         </p>
+      </div>
 
-        <br>
 
+      <div class="circle">
+        <input type="checkbox" name="order[]" value="Honey">
         <img src="Honey.webp" alt="Honey" width="150">
         <p>
-            <b>
-              Honey
-            </b>
+          <b>
+            Honey
+          </b>
         </p>
-
-    <br>
-
+      </div>
+      
+    </div>
     <i>
        The price for building your own latte is R40.00
     </i>
 
-    <br><br>
+    
+    <a href="order.html" class="orderbuttonlink2">
+      <button class="order-button2">
+        Place order
+      </button>
+    </a>
+    
 
-    <!--Footer to make sure the user is always able to return to all the other pages-->
-    <footer>
-        <h3>Nina's Café</h3>
-        <p>
-            Baked with love, Brewed with care, Shared with you
+    
+
+    
+    <footer class="footer"><!--Footer with quick link, social links, adress, copyright, operating hours etc.-->
+      <div class="footer-left">
+        <h3 class="footerLogo">
+          Nina's Café
+        </h3>
+      
+        <p class="footerSlogan">
+          Baked with love, Brewed with care, Shared with you
         </p>
-
-        <ul>
-            <li><a href = "index.html">Home</a></li>
-            <li><a href = "about.html">Our Story</a></li>
-            <li><a href = "services.html">Menu</a></li>
-            <li><a href = "blog.html">Blog</a></li>
+      </div>
+       
+      
+      <div class="footer-center">
+        <ul class="footernav-links">
+          <li><a href = "index.html">Home</a></li>
+          <li><a href = "about.html">Our Story</a></li>
+          <li><a href = "services.html">Menu</a></li>
+          <li><a href = "blog.html">Blog</a></li>
         </ul>
+      </div>
 
-        <p>
-            &copy; 2025 Nina's Café. All Rights Reserved.
-        </p>
+      
 
-        
-        <a href="order.html">
-            <button>
-              Order Now
-            </button>
-        </a>
+      <a href="order.html">
+        <button class="order-now">
+          Order Now
+        </button>
+      </a>
 
-        <address>
-            150 Bell Street, Johanessburg | Email: Welcome@ninascafe.com | Phone: 0765432178 <br>
-            Operating Hours: 08:00 - 17:30
+
+      <div class="footer-right">
+        <h4 class="footer-heading">Find us at</h4>
+        <address class="footerAddress">
+          150 Bell Street, Johanessburg <br> Email: Welcome@ninascafe.com <br> Phone: 0765432178 <br>
+          Operating Hours: 08:00 - 17:30
         </address>
+      
+        
+        <div class="Social-links">
+         <a href="https://www.instagram.com/ ninascafe" target="_blank">Instagram</a>
+         <a href="https://www.facebook.com/ ninascafe" target="_blank">Facebook</a>
+         <a href="https://www.twitter.com/ ninascafe" target="_blank">Twitter</a>
+         <a href="https://www.tiktok.com/ ninascafe" target="_blank">TikTok</a>
+        </div> 
+      
+      </div>
 
-        <p>
-            <a href="https://www.instagram.com/ ninascafe" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/ ninascafe" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com/ ninascafe" target="_blank">Twitter</a>
-            <a href="https://www.tiktok.com/ ninascafe" target="_blank">TikTok</a>
-
-
+      <div class="footer-bottom">
+        <p class="footercopyright">
+          &copy; 2025 Nina's Café. All Rights Reserved.
         </p>
+      </div>
     </footer>
 
     
