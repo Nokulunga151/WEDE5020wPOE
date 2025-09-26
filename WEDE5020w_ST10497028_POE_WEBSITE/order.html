@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
     <title>Order Now</title>
 </head>
 <body>
+   
     <header><!--The header is to make all the other pages easily acessible-->
-        <h1>
-            Nina's Café
+      
+        <h1 class="logo" >
+          Nina's Café
         </h1>
-
-        <h3>
-            Baked with love, Brewed with care, Shared with you
+        <h3 class="slogan">
+          Baked with love, Brewed with care, Shared with you
         </h3>
+      
 
-        <ul class = "nav-links">
-        <li><a href ="index.html">Home</a></li>
-        <li><a href = "about.html">Our Story</a></li>
-        <li><a href = "services.html">Menu</a></li>
-        <li><a href = "blog.html">Blog</a></li>
-
-        <a href="order.html">
-            <button>
-              Order Now <!--Order now button refreshes the order page-->
-            </button>
-        </a>
+        <ul class="nav-links">
+          <div class="right">
+            <li><a href ="index.html">Home</a></li>
+            <li><a href = "about.html">Our Story</a></li>
+            <li><a href = "services.html">Menu</a></li>
+            <li><a href = "blog.html">Blog</a></li>
+          </div>  
+        
+          <li>
+            <a href="order.html" class="orderbuttonlink">
+              <button class="order-button">
+                Order Now
+              </button>
+            </a>
+          </li>
         </ul>
+    </header> 
 
-    </header>
+
 
     <section>
         <h3>
-            Customer Details
+          Customer Details
 
         </h3>
+
 
         <form>
           <label for="name">Name:</label>
@@ -44,11 +54,14 @@
           <label for="pickup">Pickup</label><br>
           <input type="radio" id="delivery" name="method" value="Delivery">
           <label for="delivery">Delivery</label><br><br> <!--Lets users choose with option between the pickup or delivery they want-->
+          <label for="address">Address:</label>
+          <input type="text" id="name" name="customer_adress">
+          <p class="Delivery">*Only write address for the delivery option</p>
 
-            <h3>
-               Payment Method
+            <h3 class="Customer-details">
+              Payment Method
             </h3>
-
+ 
             <input type="radio" id="cash" name="payment" value="Cash">
             <label for="cash">Cash</label><br>
       
@@ -65,49 +78,59 @@
     </section>
 
     <br>
-    
-    <footer><!--Footer with quick link, social links, adress, copyright, operating hours etc.-->
-        <h3>Nina's Café</h3>
-        <p>
-            Baked with love, Brewed with care, Shared with you
-        </p>
-
-        <ul>
-            <li><a href = "index.html">Home</a></li>
-            <li><a href = "about.html">Our Story</a></li>
-            <li><a href = "services.html">Menu</a></li>
-            <li><a href = "blog.html">Blog</a></li>
-        </ul>
-
+    <footer class="footer"><!--Footer with quick link, social links, adress, copyright, operating hours etc.-->
+        <div class="footer-left">
+            <h3 class="footerLogo">
+              Nina's Café
+            </h3>
+      
+            <p class="footerSlogan">
+              Baked with love, Brewed with care, Shared with you
+            </p>
+      </div>
        
+      
+        <div class="footer-center">
+            <ul class="footernav-links">
+              <li><a href = "index.html">Home</a></li>
+              <li><a href = "about.html">Our Story</a></li>
+              <li><a href = "services.html">Menu</a></li>
+              <li><a href = "blog.html">Blog</a></li>
+           </ul>
+        </div>
 
-        <p>
-            &copy; 2025 Nina's Café. All Rights Reserved.
-        </p>
+      
 
-        
         <a href="order.html">
-            <button>
+            <button class="order-now">
               Order Now
             </button>
         </a>
 
-        <address>
-            
-           
 
-            150 Bell Street, Johanessburg | Email: Welcome@ninascafe.com | Phone: 0765432178 <br>
-            Operating Hours: 08:00 - 17:30
-        </address>
+        <div class="footer-right">
+            <h4 class="footer-heading">Find us at</h4>
+            <address class="footerAddress">
+              150 Bell Street, Johanessburg <br> Email: Welcome@ninascafe.com <br> Phone: 0765432178 <br>
+              Operating Hours: 08:00 - 17:30
+            </address>
+      
+        
+            <div class="Social-links">
+              <a href="https://www.instagram.com/ ninascafe" target="_blank">Instagram</a>
+              <a href="https://www.facebook.com/ ninascafe" target="_blank">Facebook</a>
+              <a href="https://www.twitter.com/ ninascafe" target="_blank">Twitter</a>
+              <a href="https://www.tiktok.com/ ninascafe" target="_blank">TikTok</a>
+            </div> 
+      
+        </div>
 
-        <p>
-            <a href="https://www.instagram.com/ ninascafe" target="_blank">Instagram</a>
-            <a href="https://www.facebook.com/ ninascafe" target="_blank">Facebook</a>
-            <a href="https://www.twitter.com/ ninascafe" target="_blank">Twitter</a>
-            <a href="https://www.tiktok.com/ ninascafe" target="_blank">TikTok</a>
-
-
-        </p>
+        <div class="footer-bottom">
+            <p class="footercopyright">
+              &copy; 2025 Nina's Café. All Rights Reserved.
+            </p>
+        </div>
     </footer>
+
 </body>
 </html>
