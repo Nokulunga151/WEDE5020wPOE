@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
-    <title>Order Now</title>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Nina's Café, coffee shop, pastries, café Johannesburg, lattes, cappuccino, iced coffee, espresso, homemade pastries">
+
+    <!-- SEO Description -->
+    <meta name="description" content="Nina's Café — Fresh coffee, handmade pastries, and the best Build Your Own Latte experience in South Africa.">
+
+    <!-- Author --> 
+    <meta name="author" content="Nina's Café">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph (Social Media SEO) -->
+    <meta property="og:title" content="Nina's Café">
+    <meta property="og:description" content="Enjoy fresh brews, homemade pastries, and our signature Build Your Own Latte.">
+    <meta property="og:image" content="Hero_Image_1.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nina's Café">
+    <meta name="twitter:description" content="Fresh coffee, delicious pastries, and a cosy café atmosphere.">
+    <meta name="twitter:image" content="Hero_Image_1.jpg">
+
+    <!-- Security headers -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <title>Nina's Café | Order Online</title>
+</head> 
 <body>
    
     <header><!--The header is to make all the other pages easily acessible-->
@@ -38,43 +68,71 @@
     </header> 
 
 
-
-    <section>
+    <div class="order-container">
+    <section class="order-form">
         <h3>
           Customer Details
 
         </h3>
 
+       <form id="checkout-form" onsubmit="return false;">
+        <label>Name</label><input id="cust-name" required>
+        <fieldset>
+          <legend>Method</legend>
+          <label><input type="radio" name="method" value="Pickup" checked> Pickup</label>
+          <label><input type="radio" name="method" value="Delivery"> Delivery</label>
+        </fieldset>
 
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="customer_name"><br><br>
-          <label for="pickup">Pickup or Delivery:</label><br>
-          <input type="radio" id="pickup" name="method" value="Pickup">
-          <label for="pickup">Pickup</label><br>
-          <input type="radio" id="delivery" name="method" value="Delivery">
-          <label for="delivery">Delivery</label><br><br> <!--Lets users choose with option between the pickup or delivery they want-->
-          <label for="address">Address:</label>
-          <input type="text" id="name" name="customer_adress">
-          <p class="Delivery">*Only write address for the delivery option</p>
+        <div id="delivery-block" style="display:none;">
+          <label>Delivery address</label><input id="address" placeholder="Street, Suburb, City">
+        </div>
 
-            <h3 class="Customer-details">
-              Payment Method
-            </h3>
- 
-            <input type="radio" id="cash" name="payment" value="Cash">
-            <label for="cash">Cash</label><br>
-      
-            <input type="radio" id="card" name="payment" value="Card">
-            <label for="card">Card (Credit/Debit)</label><br>
+        <h3>Payment</h3>
+        <label><input type="radio" name="payment" value="Cash" checked> Cash on delivery</label>
+        <label><input type="radio" name="payment" value="Card"> Card</label>
+        <label><input type="radio" name="payment" value="Online"> Online</label>
 
-            <input type="radio" id="online" name="payment" value="Online">
-            <label for="online">Online Payment</label><br><br> <!--Users choose their payment options-->
+        <div class="checkout-actions">
+          <button class="btn.placeOrder">Place order</button>
+        </div>
+      </form>
+    </section>
 
-            <button>
-                Place order <!--This button places the order, and refreshes the page after it is clicked-->
-            </button>
-        </form>
+    <aside class="order-summary" id="order-summary-box">
+      <h3>Your Order</h3>
+      <div id="cart-items"></div>
+      <div class="cart-summary">
+        <div><strong>Total:</strong> R<span id="order-total">0</span></div>
+      </div>
+    </aside>
+    </div>
+  </main>
+
+  <!-- Card modal (fake processing) -->
+  <div id="card-modal" class="modal">
+    <div class="modal-content">
+      <h3>Card Payment</h3>
+      <label>Cardholder</label><input id="card-name"><label>Number</label><input id="card-num" placeholder="1234 5678 9012 3456">
+      <div style="display:flex;gap:8px"><input id="card-exp" placeholder="MM/YY"><input id="card-cvv" placeholder="CVV"></div>
+      <div style="margin-top:12px">
+        <button id="card-pay" class="btn-primary">Pay</button>
+        <button class="btn close-modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Online modal -->
+  <div id="online-modal" class="modal">
+    <div class="modal-content">
+      <h3>Online Payment</h3>
+      <label>Email</label><input id="online-email" placeholder="you@example.com">
+      <div style="margin-top:12px">
+        <button id="online-pay" class="btn-primary">Pay</button>
+        <button class="btn close-modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+        
     </section>
 
     <br>
@@ -108,20 +166,30 @@
         </a>
 
 
-        <div class="footer-right">
+         <div class="footer-right">
             <h4 class="footer-heading">Find us at</h4>
             <address class="footerAddress">
               150 Bell Street, Johanessburg <br> Email: Welcome@ninascafe.com <br> Phone: 0765432178 <br>
               Operating Hours: 08:00 - 17:30
             </address>
       
-        
+             <div class="map-container" style="margin-top: 20px;">
+               <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.123456789!2d28.0416!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d123456789%3A0xabcdef123456789!2sJohannesburg!5e0!3m2!1sen!2sza!4v1234567890"
+                  width="50%" 
+                  height="150" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+              </div>
+            <br>
             <div class="Social-links">
-              <a href="https://www.instagram.com/ ninascafe" target="_blank">Instagram</a>
-              <a href="https://www.facebook.com/ ninascafe" target="_blank">Facebook</a>
-              <a href="https://www.twitter.com/ ninascafe" target="_blank">Twitter</a>
-              <a href="https://www.tiktok.com/ ninascafe" target="_blank">TikTok</a>
-            </div> 
+              <a href="https://www.instagram.com/ ninascafe" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.facebook.com/ ninascafe" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com/ ninascafe" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.tiktok.com/ ninascafe" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>  
       
         </div>
 
@@ -131,6 +199,6 @@
             </p>
         </div>
     </footer>
-
-</body>
-</html>
+   <script src="script.js"></script>
+  </body>
+</html> 
