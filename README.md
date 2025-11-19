@@ -19,4 +19,12 @@ It contains multiple pages: homepage, about, menu, blog, and an order page.
 - Added interactive order page  
 - Added reviews section with star ratings  
 - Improved responsiveness with media queries  
-- Enhanced footer design  
+- Enhanced footer design
+
+- ##Updates in Part 3
+- Add to Cart interactions
+- Quantity updates (+ / - buttons)
+- Order Summary calculations
+- Build-Your-Own-Latte (BYOL) selections
+- Payment + delivery method display logic
+- Simple UI animations
