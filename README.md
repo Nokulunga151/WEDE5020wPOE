@@ -21,7 +21,7 @@ It contains multiple pages: homepage, about, menu, blog, and an order page.
 - Improved responsiveness with media queries  
 - Enhanced footer design
 
-- ##Updates in Part 3
+**##Updates in Part 3**
 - Add to Cart interactions
 - Quantity updates (+ / - buttons)
 - Order Summary calculations
