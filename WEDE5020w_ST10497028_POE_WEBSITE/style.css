@@ -11,7 +11,7 @@
   background: rgba(0, 0, 0, 0.0); /* translucent background */
   color: white;  
 }
-
+ 
 /*Logo container aligned to the left hand side of the page*/
 .logo-box{
     text-align: left;
@@ -118,7 +118,7 @@
   color: #2c1b1b;
   font-family:'Kaushan Script', cursive;
   font: bolder;
-  background: rgba(255, 255, 255, 0.4); /*makes the background translucent white*/
+  background: rgba(255, 255, 255, 0.0); /*makes the background translucent*/
 }
 
 /*Hero button styling with padding and hover background change*/
@@ -513,6 +513,31 @@ header > .logo, .slogan{
     display: block;
 }
 
+.circle {
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.circle input:checked + img {
+  box-shadow: 0 0 15px gold;
+  border: 3px solid gold !important;
+  transform: scale(1.08);
+}
+
+.byol-summary-box {
+  color: white;
+  background: #a18b6d;
+  padding: 15px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px auto;
+  text-align: left;
+  border: 2px solid #4b2e2e;
+}
+
+
 /* Circular grid for team or similar */
 .circle-grid{
     display: flex;
@@ -674,6 +699,89 @@ header > .logo, .slogan{
   font-style: italic;
 }
 
+/* Order Container */
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(224, 217, 217);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-form, .order-summary {
+    width: 45%;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="radio"] {
+    margin-top: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+.btn-primary, .btn.placeOrder {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 15%;
+    margin-top: 20px;
+}
+
+
+/* Other Button Styling */
+.btn.close-modal {
+   background-color: #e67e22;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 15%;
+    margin-top: 20px; 
+    
+}
+
+.order-summary {
+    background-color: #c5bdbd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#order-summary-box p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
 
 /* Responsive styles for mobile phones (up to 400px) */
 @media (max-width: 400px) {
@@ -735,5 +843,11 @@ header > .logo, .slogan{
     margin-top: 20px;
   }
 }
+
+
+
+
+
+
 
 
