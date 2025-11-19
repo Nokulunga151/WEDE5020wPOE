@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
-    <title>Full Menu</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- SEO Keywords -->
+    <meta name="keywords" content="Nina's Café, coffee shop, pastries, café Johannesburg, lattes, cappuccino, iced coffee, espresso, homemade pastries">
+
+    <!-- SEO Description -->
+    <meta name="description" content="Nina's Café — Fresh coffee, handmade pastries, and the best Build Your Own Latte experience in South Africa.">
+
+    <!-- Author --> 
+    <meta name="author" content="Nina's Café">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph (Social Media SEO) -->
+    <meta property="og:title" content="Nina's Café">
+    <meta property="og:description" content="Enjoy fresh brews, homemade pastries, and our signature Build Your Own Latte.">
+    <meta property="og:image" content="Hero_Image_1.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nina's Café">
+    <meta name="twitter:description" content="Fresh coffee, delicious pastries, and a cosy café atmosphere.">
+    <meta name="twitter:image" content="Hero_Image_1.jpg">
+    <!-- Security headers -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+    <title>Nina's Café | Full Menu</title>
+  </head>
+  <body>
     <header>
        <!--This page is to let the customer see the full list of the beverages, pastries and sides the cafe is offering-->
        <!--It has everything in the menu oage except it shows more items-->
@@ -33,9 +62,7 @@
                   <input type="radio" id="iced" name="drink" value="iced">
                   <label for="iced">Iced</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                  
                 </form>
 
             </div>
@@ -76,9 +103,7 @@
                    <input type="radio" id="iced" name="drink" value="iced">
                    <label for="iced">Iced</label>
                    <br>
-                   <label>Qty:</label>
-                   <input type = "number">
-                   <br>
+                  
                 </form>
 
             </div>
@@ -100,9 +125,7 @@
                   <input type="radio" id="iced" name="drink" value="iced">
                   <label for="iced">Iced</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                  
                 </form>
             </div>
   
@@ -122,9 +145,7 @@
                   <input type="radio" id="iced" name="drink" value="iced">
                   <label for="iced">Iced</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                 <br>
+                 
                 </form>
             </div>
             
@@ -144,9 +165,7 @@
                   <input type="radio" id="iced" name="drink" value="iced">
                   <label for="iced">Iced</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                  
           
                 </form>
 
@@ -161,8 +180,7 @@
                     </b>
                 </p>
                 <br>
-                <label>Qty:</label>
-                <input type = "number">
+               
        
             </div>
 
@@ -182,9 +200,7 @@
                   <input type="radio" id="iced" name="drink" value="iced">
                   <label for="iced">Iced</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                  
                 </form>
 
             </div>
@@ -200,9 +216,7 @@
                       Lemonade - R30.00
                     </b>
                 </p>
-                <label>Qty:</label>
-                <input type = "number">
-                <br>  
+                  
             </div>
 
             <div class="menu-item">
@@ -214,8 +228,6 @@
                     </b>
                 </p>
 
-                <label>Qty:</label>
-                <input type = "number">
             </div>
       
 
@@ -228,8 +240,7 @@
                     </b>
                 </p>
         
-                <label>Qty:</label>
-                <input type = "number">
+                
             </div>
 
 
@@ -242,8 +253,7 @@
                     </b>
                 </p>
 
-                <label>Qty:</label>
-                <input type = "number">
+                
         
             </div>
         </div>
@@ -253,11 +263,11 @@
 
         <div class="menu-grid2">
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Croissant">
+              <input type="checkbox" name="order[]" value="Croissant" data-price="28">
                 <img src="Croissant.jpg" alt="A picture of a croissant" width="150">
                 <p>
                     <b>
-                      Croissant - R18.00
+                      Croissant - R28.00
                     </b>
                 </p>
 
@@ -291,16 +301,14 @@
                   <label for="Nutella">Nutella</label>
                   <br> 
 
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                 
           
                 </form>
             </div>
         
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Brownie">
+              <input type="checkbox" name="order[]" value="Brownie" data-price="30">
                <img src="Brownie.jpg" alt="A picture of a brownie" width="150">
                <p>
                     <b>
@@ -334,14 +342,13 @@
                   <br>
                 
         
-                  <label>Qty:</label>
-                  <input type = "number">
+                 
                 </form>
             </div>
         
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Cinnamon roll">
+              <input type="checkbox" name="order[]" value="Cinnamon roll" data-price="25">
                 <img src="Cinnamon_Roll.jpg" alt="A picture of cinnamon rolls" width="150">
                 <p>
                     <b>
@@ -371,13 +378,12 @@
                   <label for="Lemon">Lemon</label>
                   <br>
                 
-                   <label>Qty:</label>
-                   <input type = "number">
+                  
                 </form>
             </div>
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Muffin">
+              <input type="checkbox" name="order[]" value="Muffin" data-price="26">
                <img src="Chocolate_Muffin.jpg" alt="A picture of a Chocolate Muffin" width="150">
                <p>
                     <b>
@@ -410,15 +416,11 @@
                   <label for="Oatmeal">Oatmeal</label>
                   <br>
 
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
-
                 </form>
             </div>
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Filled Doughnuts">
+              <input type="checkbox" name="order[]" value="Filled Doughnuts" data-price="30">
                 <img src="Filled_Dougnuts.jpg" alt="A picture of filled doughnuts" width="150">
                 <p>
                     <b>
@@ -441,9 +443,7 @@
                   <input type="radio" id="Lemon" name="Pastry" value="Lemon">
                   <label for="Lemon">Lemon Filling</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                  
            
                 </form>
 
@@ -451,7 +451,7 @@
 
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Cookies">
+              <input type="checkbox" name="order[]" value="Cookies" data-price="25">
                 <img src="Chocolate_Cookie.jpg" alt="A picture of cookies" width="150">
                 <p>
                     <b>
@@ -478,16 +478,14 @@
                   <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
                   <label for="Oatmeal">Oatmeal</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                  
 
                 </form>
 
             </div>
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Doughnuts">
+              <input type="checkbox" name="order[]" value="Doughnuts" data-price="25">
                 <img src="Doughnuts.jpg" alt="A picture of Doughnuts" width="150">
                 <p>
                     <b>
@@ -514,17 +512,14 @@
                    <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
                    <label for="Oatmeal">Oatmeal</label>
                    <br>
-                   <label>Qty:</label>
-                   <input type = "number">
-                   <br>
-
+                   
                 </form>
 
             </div>
 
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Cake">
+              <input type="checkbox" name="order[]" value="Cake" data-price="36">
                 <img src="Cake.jpg" alt="A picture of a Chocolate cake" width="150">
                 <p>
                     <b>
@@ -552,16 +547,14 @@
                   <input type="radio" id="Oatmeal" name="Pastry" value="Oatmeal">
                   <label for="Oatmeal">Oatmeal</label>
                   <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                  <br>
+                 
 
                 </form>
             </div>
 
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Banana Bread">
+              <input type="checkbox" name="order[]" value="Banana Bread" data-price="20">
                 <img src="Banana_Bread.jpg" alt="A picture of Banana Bread" width="150">
                 <p>
                     <b>
@@ -590,13 +583,12 @@
                    <label for="Lemon">Espresso</label>
                    <br>
 
-                   <label>Qty:</label>
-                   <input type = "number">
+                   
                 </form>
             </div>
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Tiramisu">
+              <input type="checkbox" name="order[]" value="Tiramisu" data-price="55">
                 <img src="Tiramisu.jpg" alt="A picture of Tiramisu" width="150">
                 <p>
                     <b>
@@ -629,14 +621,13 @@
                   <label for="Lemon">Limoncello</label>
                   <br>
 
-                  <label>Qty:</label>
-                  <input type = "number">
+                  
                 </form>
             </div>
 
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Strawberry Cake">
+              <input type="checkbox" name="order[]" value="Strawberry Cake" data-price="36">
                 <img src="Strawberry_Cake.jpg" alt="A picture of a  Strawberry cake" width="150">
                 <p>
                     <b>
@@ -644,13 +635,12 @@
                     </b>
                 </p>
                <br>
-               <label>Qty:</label>
-               <input type = "number">
+               
 
             </div>
 
             <div class="menu-item2">
-              <input type="checkbox" name="order[]" value="Cheesecake">
+              <input type="checkbox" name="order[]" value="Cheesecake" data-price="38">
                 <img src="Cheesecake.jpg" alt="A picture of a Cheesecake" width="150">
                 <p>
                     <b>
@@ -671,9 +661,7 @@
                   <input type="radio" id="Lemon" name="Pastry" value="Lemon">
                   <label for="Lemon">Lemon</label>
                    <br>
-                  <label>Qty:</label>
-                  <input type = "number">
-                   <br>
+                  
 
                 </form>
 
@@ -685,7 +673,7 @@
     <h2 class="Sweetners">Sweetners</h2>
     <div class="circle-grid">
       <div class="circle">
-        <input type="checkbox" name="order[]" value="Vanilla">
+        <input type="checkbox" name="order[]" value="Vanilla" data-category="sweetner">
         <img src="Vanilla_Syrup.jpg" alt="Vanilla syrup" width="150">
         <p>
           <b>
@@ -697,7 +685,7 @@
       <br>
 
       <div class="circle">
-        <input type="checkbox" name="order[]" value="Caramel">
+        <input type="checkbox" name="order[]" value="Caramel" data-category="sweetner">
         <img src="Caramel_syrup.jpg" alt="Caramel Syrup" width="150">
         <p>
           <b>
@@ -709,7 +697,7 @@
       <br>
       
       <div class="circle">
-        <input type="checkbox" name="order[]" value="Irish Cream">
+        <input type="checkbox" name="order[]" value="Irish Cream" data-category="sweetner">
         <img src="irish-cream.jpg" alt="Irish cream" width="150">
         <p>
           <b>
@@ -721,7 +709,7 @@
       <br>
    
       <div class="circle">
-        <input type="checkbox" name="order[]" value="Hazelnut">
+        <input type="checkbox" name="order[]" value="Hazelnut" data-category="sweetner">
         <img src="HazelnutSyrup.jpg" alt="Hazelnut Syrup" width="150">
         <p>
           <b>
@@ -734,7 +722,7 @@
       <br>
   
       <div class="circle">
-        <input type="checkbox" name="order[]" value="Maple">
+        <input type="checkbox" name="order[]" value="Maple" data-category="sweetner">
         <img src="Maple_syrup.webp" alt="A picture of maple syrup" width="150">
         <p>
             
@@ -747,7 +735,7 @@
       <br>
       
       <div class="circle">
-        <input type="checkbox" name="order[]" value="Brown">
+        <input type="checkbox" name="order[]" value="Brown" data-category="sweetner">
         <img src="BrownSugar.webp" alt="Brown Sugar" width="150">
         <p>
           <b>
@@ -759,7 +747,7 @@
       <br>
 
       <div class="circle">
-        <input type="checkbox" name="order[]" value=" White">
+        <input type="checkbox" name="order[]" value=" White" data-category="sweetner">
         <img src="White sugar.webp" alt="White Sugar" width="150">
         <p>
           <b>
@@ -771,7 +759,7 @@
       <br>
 
       <div class="circle">
-        <input type="checkbox" name="order[]" value="PumpkinSpice">
+        <input type="checkbox" name="order[]" value="PumpkinSpice" data-category="sweetner">
         <img src="PumpkinSpice.jpg" alt="Pumpkin Spice" width="150">
         <p>
           <b>
@@ -782,7 +770,7 @@
 
 
       <div class="circle">
-        <input type="checkbox" name="order[]" value="Honey">
+        <input type="checkbox" name="order[]" value="Honey" data-category="sweetner">
         <img src="Honey.webp" alt="Honey" width="150">
         <p>
           <b>
@@ -793,7 +781,7 @@
       
     </div>
     <i>
-       The price for building your own latte is R40.00
+       The price for building your own latte is R60.00
     </i>
 
     
@@ -836,20 +824,29 @@
         </button>
       </a>
 
-
+ 
       <div class="footer-right">
         <h4 class="footer-heading">Find us at</h4>
         <address class="footerAddress">
           150 Bell Street, Johanessburg <br> Email: Welcome@ninascafe.com <br> Phone: 0765432178 <br>
           Operating Hours: 08:00 - 17:30
         </address>
-      
-        
+         <div class="map-container" style="margin-top: 20px;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.123456789!2d28.0416!3d-26.2041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950d123456789%3A0xabcdef123456789!2sJohannesburg!5e0!3m2!1sen!2sza!4v1234567890"
+              width="50%" 
+              height="150" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        <br>
         <div class="Social-links">
-         <a href="https://www.instagram.com/ ninascafe" target="_blank">Instagram</a>
-         <a href="https://www.facebook.com/ ninascafe" target="_blank">Facebook</a>
-         <a href="https://www.twitter.com/ ninascafe" target="_blank">Twitter</a>
-         <a href="https://www.tiktok.com/ ninascafe" target="_blank">TikTok</a>
+          <a href="https://www.instagram.com/ ninascafe" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ ninascafe" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.twitter.com/ ninascafe" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.tiktok.com/ ninascafe" target="_blank"><i class="fab fa-tiktok"></i></a>
         </div> 
       
       </div>
@@ -860,7 +857,6 @@
         </p>
       </div>
     </footer>
-
-    
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
